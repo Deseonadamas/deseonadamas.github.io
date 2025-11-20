@@ -18,11 +18,3 @@ h1 {
   font-size: clamp(3rem, 8vw, 5rem);
   text-align: center;
 }
-
-/* Texto blanco con highlight negro */
-h1 span {
-  background: black;
-  color: white;
-  padding: 0.4em 0.6em;
-  border-radius: 6px;
-}
