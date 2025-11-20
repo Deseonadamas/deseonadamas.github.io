@@ -1,16 +1,28 @@
-/* Fondo verde oliva y texto centrado en pantalla */
+/* Imagen de fondo ocupando toda la pantalla */
 body {
   margin: 0;
+  padding: 0;
   height: 100vh;
+  background-image: url('fondo.jpg');
+  background-size: cover;      /* que cubra toda la pantalla */
+  background-position: center; /* centrada */
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6b8e23; /* verde oliva */
 }
 
-/* Header grande, color negro */
+/* Título centrado */
 h1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: clamp(3rem, 8vw, 5rem);
-  color: #000000; /* negro */
+  text-align: center;
+}
+
+/* Texto blanco con highlight negro */
+h1 span {
+  background: black;
+  color: white;
+  padding: 0.4em 0.6em;
+  border-radius: 6px;
 }
